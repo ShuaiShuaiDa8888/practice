@@ -1,8 +1,7 @@
-package InputStreamOne;
+package inputStreamOne;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 
 /**
  * Created by WS on 2018/3/16.
