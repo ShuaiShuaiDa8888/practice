@@ -1,4 +1,4 @@
-package FileReaderWriter;
+package fileReaderWriter;
 
 import java.io.*;
 
