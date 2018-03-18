@@ -2,6 +2,7 @@ package inputStreamOne;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 
 /**
  * Created by WS on 2018/3/16.
@@ -21,6 +22,14 @@ public class InputStream {
             }
         } catch (Exception e) {
             e.printStackTrace();
+        }finally {
+            if (null != fileInputStream) {
+                try {
+                    fileInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 }
