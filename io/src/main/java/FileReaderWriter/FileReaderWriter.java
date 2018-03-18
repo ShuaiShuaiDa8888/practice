@@ -6,6 +6,7 @@ import java.io.*;
  * 若不对源文件做编码处理，读出来的就是乱码；因为TXT文本默认编码格式为ASIC；
  * 当对源文件进行编码设置后(另存为时修改编码方式为utf-8)，可解决此问题。
  *
+ * TXT(纯文本文件)可用字符流；word文件要用字节流
  * Created by WS on 2018/3/18.
  */
 public class FileReaderWriter {

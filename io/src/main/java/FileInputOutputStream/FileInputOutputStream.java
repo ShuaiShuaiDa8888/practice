@@ -3,6 +3,8 @@ package FileInputOutputStream;
 import java.io.*;
 
 /**
+ * TXT(纯文本文件)可用字符流；word文件要用字节流
+ *
  * Created by WS on 2018/3/17.
  */
 public class FileInputOutputStream {
