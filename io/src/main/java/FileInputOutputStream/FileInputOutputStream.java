@@ -1,11 +1,11 @@
-package inputOutputStream;
+package FileInputOutputStream;
 
 import java.io.*;
 
 /**
  * Created by WS on 2018/3/17.
  */
-public class InputOutputStream {
+public class FileInputOutputStream {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
         String start = "E:\\weiShuai\\IO\\source.wmv";
