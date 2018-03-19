@@ -1,9 +1,6 @@
 package printStreamOrPrintWriter;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
+import java.io.*;
 
 /**
  * Created by WS on 2018/3/20.
@@ -28,6 +25,11 @@ public class PrintStreamOrPrintWriter {
             if ((i + 1) % 5 == 0) {
                 System.out.println();
             }
+        }
+        try {
+            fileOutputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
