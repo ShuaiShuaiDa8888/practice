@@ -5,8 +5,12 @@ import java.io.*;
 /**
  * 对象流的输入和输出
  * 对象流输出会乱码，将输出的对象再次输入到程序不乱码
- * 如果只有内部类实现序列化，而外部封装类没有实现序列化接口，就会在对内部类进行序列化的时候报出异常
- * 被static和transient修饰的属性不能被序列化
+ * 序列化注意事项：
+ * 1）实现Serializable或Externalizable
+ * 2)类的属性也要实现序列化
+ * 3)如果只有内部类实现序列化，而外部封装类没有实现序列化接口，就会在对内部类进行序列化的时候报出异常
+ * 4)被static和transient修饰的属性不能被序列化
+ * 5)提供版本号，显示的声明private static final long serialVersionUID 。用来表明类的不同。
  * Created by WS on 2018/3/21.
  */
 public class TestOfObjectInputOrOutputStream implements Serializable {
