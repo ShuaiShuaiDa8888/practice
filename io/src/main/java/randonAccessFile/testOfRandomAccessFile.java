@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /**
+ * 随机存取文件流实现文件复制
+ *
  * Created by WS on 2018/3/22.
  */
 public class testOfRandomAccessFile {
