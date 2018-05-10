@@ -28,7 +28,7 @@ public class TestOfShiroRole {
      */
     @Test
     public void checkRole(){
-        Subject subject = Shiro03Util.login("classpath:shiro03.ini", "jack", "1234");
+        Subject subject = Shiro03Util.login("classpath:shiro03.ini", "java1234", "123456");
         subject.checkRole("role1");
 
         /** 下面两个方法作用相同 */
