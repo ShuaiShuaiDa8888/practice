@@ -1,6 +1,6 @@
-package com.weishuai.shiro.realm;
+package com.weishuai.shiro.realm_shiro.dao;
 
-import com.weishuai.shiro.realm.pojo.User;
+import com.weishuai.shiro.realm_shiro.pojo.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

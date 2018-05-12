@@ -1,6 +1,8 @@
-package com.weishuai.shiro.realm;
+package com.weishuai.shiro.realm_shiro.myrealm;
 
-import com.weishuai.shiro.realm.pojo.User;
+import com.weishuai.shiro.realm_shiro.dao.UserDao;
+import com.weishuai.shiro.realm_shiro.pojo.User;
+import com.weishuai.shiro.realm_shiro.utils.DbUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;

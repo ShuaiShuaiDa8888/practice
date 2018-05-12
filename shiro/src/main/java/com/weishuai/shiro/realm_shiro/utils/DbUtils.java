@@ -1,4 +1,4 @@
-package com.weishuai.shiro.realm;
+package com.weishuai.shiro.realm_shiro.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

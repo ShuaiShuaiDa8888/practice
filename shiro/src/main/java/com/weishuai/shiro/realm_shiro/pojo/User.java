@@ -1,4 +1,4 @@
-package com.weishuai.shiro.realm.pojo;
+package com.weishuai.shiro.realm_shiro.pojo;
 
 /**
  * Created by WS on 2018/5/11.
