@@ -14,7 +14,7 @@ import java.io.IOException;
 /**
  * Created by WS on 2018/5/7.
  */
-public class LoginServlet extends HttpServlet{
+public class LoginServlet extends HttpServlet {
 
     private static final long serialVersionUID = -8769370205388617679L;
 
@@ -32,9 +32,14 @@ public class LoginServlet extends HttpServlet{
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(userName, CrypographyUtils.md5(password, "盐"));
         try {
-            subject.login(token);
+            if (subject.isRemembered()) {
+                System.out.println("已经记住密码了！");
+            } else {
+                token.setRememberMe(true);
+                subject.login(token);
+            }
             resp.sendRedirect("/success.jsp");
-        }catch (Exception e){
+        } catch (Exception e) {
             req.setAttribute("error", "用户名或密码错误！");
             req.getRequestDispatcher("/login.jsp").forward(req, resp);
         }
