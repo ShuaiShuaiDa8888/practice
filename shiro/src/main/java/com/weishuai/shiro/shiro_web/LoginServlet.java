@@ -1,5 +1,6 @@
 package com.weishuai.shiro.shiro_web;
 
+import com.weishuai.shiro.realm_shiro.utils.CrypographyUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
@@ -29,7 +30,7 @@ public class LoginServlet extends HttpServlet{
         String userName = req.getParameter("userName");
         String password = req.getParameter("password");
         Subject subject = SecurityUtils.getSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken(userName, password);
+        UsernamePasswordToken token = new UsernamePasswordToken(userName, CrypographyUtils.md5(password, "盐"));
         try {
             subject.login(token);
             resp.sendRedirect("/success.jsp");
